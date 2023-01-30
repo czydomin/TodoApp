@@ -1,4 +1,4 @@
-function Title({ text }) {
+function Title({ text }: any) {
   return <h1 className="maintext">{text}</h1>;
 }
 
