@@ -1,7 +1,7 @@
-function Task() {
+function Task({ message }: any) {
   return (
     <div className="task-container">
-      <p className="task-text">hello</p>
+      <p className="task-text">{message}</p>
       <div>
         <input className="checkbox" type="checkbox"></input>
         <button className="editbtn">

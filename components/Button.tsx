@@ -1,6 +1,9 @@
-function Button({ title, variant }: any) {
+function Button({ title, variant, onClick }: any) {
   return (
-    <button className={variant === "red" ? " btn btn-red" : "btn btn-blue"}>
+    <button
+      onClick={onClick}
+      className={variant === "red" ? " btn btn-red" : "btn btn-blue"}
+    >
       {title}
     </button>
   );
